@@ -1,0 +1,3 @@
+[submodule "cpp00"]
+	path = cpp00
+	url = https://github.com/BenJ3D/cpp00.git
