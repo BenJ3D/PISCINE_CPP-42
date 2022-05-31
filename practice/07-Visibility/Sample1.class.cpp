@@ -1,36 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Sample.class.cpp                                   :+:      :+:    :+:   */
+/*   Sample1.class.cpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bducrocq <bducrocq@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 18:49:07 by bducrocq          #+#    #+#             */
-/*   Updated: 2022/05/31 20:24:26 by bducrocq         ###   ########.fr       */
+/*   Updated: 2022/05/31 22:24:35 by bducrocq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Sample.class.hpp"
+#include "Sample1.class.hpp"
 
-Sample::Sample(void) 
+Sample1::Sample1( void )
 {
-	std::cout << "Sample constructor" << std::endl;
+	std::cout << "Constructor called" << std::endl;
+
+	this->publicFoo = 0;
+	std::cout << "this->publicFoo: " < this->publicFoo << std::endl;
+	this->_privateFoo = 0;
+	std::cout << "this->privateFoo: " < this->publicFoo << std::endl;
 	
-	this->foo = 42;
-	std::cout << "this->foo : " << this->foo << std::endl;
 	
-	this->bar();
 	return;
 }
 
-Sample::~Sample(void)
+Sample1::~Sample1(void)
 {
 	std::cout << "Sample destructor" << std::endl;
 	return;
 }
 
-void	Sample::bar(void)
+void	Sample1::publicBar(void) const
 {
-	std::cout << "Member function bar called" << std::endl;
+	
+	std::cout << "Member function bar called pi = " << this->pi << std::endl;
 	return;
 }

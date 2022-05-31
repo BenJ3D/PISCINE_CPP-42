@@ -6,7 +6,7 @@
 /*   By: bducrocq <bducrocq@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 18:53:52 by bducrocq          #+#    #+#             */
-/*   Updated: 2022/05/31 20:22:38 by bducrocq         ###   ########.fr       */
+/*   Updated: 2022/05/31 18:54:47 by bducrocq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,5 @@
 int main()
 {
 	Sample	instance;
-
 	return (0);
 }

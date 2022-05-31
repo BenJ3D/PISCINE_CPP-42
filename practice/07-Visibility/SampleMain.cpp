@@ -6,15 +6,15 @@
 /*   By: bducrocq <bducrocq@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 18:53:52 by bducrocq          #+#    #+#             */
-/*   Updated: 2022/05/31 20:22:38 by bducrocq         ###   ########.fr       */
+/*   Updated: 2022/05/31 21:10:16 by bducrocq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Sample.class.hpp"
+#include "Sample1.class.hpp"
 
 int main()
 {
-	Sample	instance;
-
+	Sample1	instance(3.14f);
+	instance.bar();
 	return (0);
 }

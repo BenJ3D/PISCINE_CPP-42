@@ -1,20 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   SampleMain.cpp                                     :+:      :+:    :+:   */
+/*   Sample.class.cpp                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bducrocq <bducrocq@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/31 18:53:52 by bducrocq          #+#    #+#             */
-/*   Updated: 2022/05/31 20:22:38 by bducrocq         ###   ########.fr       */
+/*   Created: 2022/05/31 18:49:07 by bducrocq          #+#    #+#             */
+/*   Updated: 2022/05/31 20:09:46 by bducrocq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Sample.class.hpp"
 
-int main()
+Sample::Sample(void) 
 {
-	Sample	instance;
+	std::cout << "Sample constructor" << std::endl;
+	return;
+}
 
-	return (0);
+Sample::~Sample(void)
+{
+	std::cout << "Sample destructor" << std::endl;
+	return;
+}
+
+void	Sample::bar(void)
+{
+	std::cout << "Member function bar called" << std::endl;
+	return;
 }

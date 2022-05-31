@@ -1,20 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   SampleMain.cpp                                     :+:      :+:    :+:   */
+/*   Sample.class.hpp                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bducrocq <bducrocq@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/31 18:53:52 by bducrocq          #+#    #+#             */
-/*   Updated: 2022/05/31 20:22:38 by bducrocq         ###   ########.fr       */
+/*   Created: 2022/05/31 18:49:09 by bducrocq          #+#    #+#             */
+/*   Updated: 2022/05/31 18:49:10 by bducrocq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Sample.class.hpp"
+#ifndef SAMPLE_CLASS_H
+# define SAMPLE_CLASS_H
 
-int main()
-{
-	Sample	instance;
+class Sample {
 
-	return (0);
-}
+	public:
+
+		Sample(void);
+		~Sample(void);
+};
+
+#endif
