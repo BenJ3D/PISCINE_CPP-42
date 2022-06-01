@@ -1,33 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Sample1.class.hpp                                  :+:      :+:    :+:   */
+/*   Sample1.class.cpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bducrocq <bducrocq@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/31 18:49:09 by bducrocq          #+#    #+#             */
-/*   Updated: 2022/06/01 14:18:57 by bducrocq         ###   ########.fr       */
+/*   Created: 2022/05/31 18:49:07 by bducrocq          #+#    #+#             */
+/*   Updated: 2022/06/01 15:20:11 by bducrocq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SAMPLE1_CLASS_H
-#define SAMPLE1_CLASS_H
-
 #include <iostream>
+#include "Sample1.class.hpp"
 
-class Sample1 {
+Sample1::Sample1(void) {
+	
+	std::cout << "Construtor called" << std::endl;
+	Sample1::_nbInst += 1;
+	return;
+}
 
-public:
+Sample1::~Sample1(void) {
+	
+	std::cout << "Destructor called" << std::endl;
+	Sample1::_nbInst -= 1;
+	return;
+}
 
-	Sample1(void);
-	~Sample1(void);
+int		Sample1::getNbInst(void) {
+	
+	return Sample1::_nbInst;
+}
 
-	int		getFoo(void) const;
-	void	setFoo(int v);
-
-private:
-
-	int _foo;
-};
-
-#endif
+int		Sample1::_nbInst = 0;

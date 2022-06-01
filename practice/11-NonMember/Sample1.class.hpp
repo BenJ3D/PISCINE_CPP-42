@@ -6,28 +6,26 @@
 /*   By: bducrocq <bducrocq@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 18:49:09 by bducrocq          #+#    #+#             */
-/*   Updated: 2022/06/01 14:18:57 by bducrocq         ###   ########.fr       */
+/*   Updated: 2022/06/01 15:27:42 by bducrocq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SAMPLE1_CLASS_H
 #define SAMPLE1_CLASS_H
 
-#include <iostream>
-
-class Sample1 {
+class Sample1
+{
 
 public:
 
 	Sample1(void);
 	~Sample1(void);
 
-	int		getFoo(void) const;
-	void	setFoo(int v);
+	static int getNbInst(void);
 
 private:
 
-	int _foo;
+	static int	_nbInst;
 };
 
 #endif

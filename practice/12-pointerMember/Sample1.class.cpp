@@ -1,33 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Sample1.class.hpp                                  :+:      :+:    :+:   */
+/*   Sample1.class.cpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bducrocq <bducrocq@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/31 18:49:09 by bducrocq          #+#    #+#             */
-/*   Updated: 2022/06/01 14:18:57 by bducrocq         ###   ########.fr       */
+/*   Created: 2022/05/31 18:49:07 by bducrocq          #+#    #+#             */
+/*   Updated: 2022/06/01 16:51:46 by bducrocq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SAMPLE1_CLASS_H
-#define SAMPLE1_CLASS_H
-
 #include <iostream>
+#include "Sample1.class.hpp"
 
-class Sample1 {
+Sample1::Sample1(void) : foo(0) {
+	
+	std::cout << "Construtor called" << std::endl;
+	return;
+}
 
-public:
+Sample1::~Sample1(void) {
+	
+	std::cout << "Destructor called" << std::endl;
+	return;
+}
 
-	Sample1(void);
-	~Sample1(void);
-
-	int		getFoo(void) const;
-	void	setFoo(int v);
-
-private:
-
-	int _foo;
-};
-
-#endif
+void	Sample1::bar(void) const {
+	std::cout << "Member function bar called" << std::endl;
+	
+	return;
+}
