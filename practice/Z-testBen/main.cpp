@@ -6,11 +6,11 @@
 /*   By: bducrocq <bducrocq@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 00:17:45 by bducrocq          #+#    #+#             */
-/*   Updated: 2022/12/02 01:26:06 by bducrocq         ###   ########.fr       */
+/*   Updated: 2022/12/06 01:28:34 by bducrocq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "test.class.cpp"
+#include "test.class.hpp"
 
 int main (void)
 {
@@ -26,6 +26,7 @@ int main (void)
 	else
 		std::cout << "Putain mais ecrit quelque chose bordel de merde !" << std::endl;
 	
-	
+	ben.add();
+	ben.add();
 	return (0);
 }
