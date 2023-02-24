@@ -34,4 +34,6 @@ C++ templates
 Containers templates, itérateurs, algorithmes
 
 
-Le cours de C++ à 42 est conçu pour enseigner toutes les compétences de base nécessaires pour programmer efficacement en C++. Les concepts couverts comprennent la syntaxe de base, la manipulation des types de données, les pointeurs et les références, l'allocation de mémoire, les instructions de commutation, les opérateurs, les classes, les fonctions membres, le polymorphisme, l'héritage, les interfaces, les répétitions et les exceptions, les conteneurs templates, les itérateurs et les algorithmes. Nous apprennons à créer des programmes C++ robustes et efficaces en utilisant une variété de techniques, telles que la surcharge d'opérateurs, la forme canonique, les classes abstraites et les castings C++.
+<h2>Descriptif:</h2>
+Le cours de C++ à 42 est conçu pour enseigner toutes les compétences de base nécessaires pour programmer efficacement en C++.
+Les concepts couverts comprennent la syntaxe de base, la manipulation des types de données, les pointeurs et les références, l'allocation de mémoire, les instructions de commutation, les opérateurs, les classes, les fonctions membres, le polymorphisme, l'héritage, les interfaces, les répétitions et les exceptions, les conteneurs templates, les itérateurs et les algorithmes. Nous apprennons à créer des programmes C++ robustes et efficaces en utilisant une variété de techniques, telles que la surcharge d'opérateurs, la forme canonique, les classes abstraites et les castings C++.
